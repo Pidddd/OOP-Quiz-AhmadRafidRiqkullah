@@ -18,16 +18,20 @@ public class Customer {
      * @param customerId customer identifier
      * @param name       customer's name
      */
+    private String customerId;
+    private String name;
+    
     public Customer(String customerId, String name) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        this.customerId = customerId;
+        this.name = name;
     }
 
     public String getCustomerId() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return this.customerId;
     }
 
     public String getName() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return this.name;
     }
 
     /**
