@@ -40,8 +40,8 @@ public class Customer {
      *
      * @param name new name
      */
-    public void setName(String name) {
-        if (name != null && !name.isEmpty()) {
+    public void setName(String name) { // cek nama jika dia null atau blank berarti invalid dan sebaliknya
+        if (name != null && !name.isBlank()) {
             this.name = name;
         }
     }
