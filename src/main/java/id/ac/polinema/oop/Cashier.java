@@ -6,7 +6,7 @@ public class Cashier {
         if (cash >= finalTotal) {
             return cash - finalTotal;
         } else {
-            return 1;
+            return -1;
         }
     }
 }
