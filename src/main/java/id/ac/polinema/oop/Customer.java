@@ -20,7 +20,7 @@ public class Customer {
      */
     private String customerId;
     private String name;
-    
+
     public Customer(String customerId, String name) {
         this.customerId = customerId;
         this.name = name;
@@ -41,6 +41,8 @@ public class Customer {
      * @param name new name
      */
     public void setName(String name) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (name != null && !name.isEmpty()) {
+            this.name = name;
+        }
     }
 }
