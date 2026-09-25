@@ -5,10 +5,10 @@ public class Order {
     private OrderItem[] items;
     private int itemCount;
 
-    public Order(Customer customer, int itemCount) {
+    public Order(Customer customer) {
         this.customer = customer;
         this.items = new OrderItem[10]; //  10 ini batas max arraynya 
-        this.itemCount = itemCount;
+        this.itemCount = 0;
     }
 
     public Customer getCustomer() {
