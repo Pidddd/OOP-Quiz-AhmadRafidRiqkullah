@@ -5,8 +5,8 @@ public class Cashier {
         double finalTotal = order.getFinalTotal();
         if (cash >= finalTotal) {
             return cash - finalTotal;
-        } else{
-            return 0;
+        } else {
+            return 1;
         }
     }
 }
