@@ -2,12 +2,12 @@ package id.ac.polinema.oop;
 
 public class Order {
     private Customer customer;
-    private OrderItem[] orderItems;
+    private OrderItem[] items;
     private int itemCount;
 
     public Order(Customer customer, int itemCount) {
         this.customer = customer;
-        this.orderItems = new OrderItem[10]; //  10 ini batas max arraynya 
+        this.items = new OrderItem[10]; //  10 ini batas max arraynya 
         this.itemCount = itemCount;
     }
 
@@ -17,7 +17,7 @@ public class Order {
 
     public void addItem(MenuItem item, int quantity) { // fugsi menambahkan item 
         if (this.itemCount < 10) {
-            this.orderItems[this.itemCount] = new OrderItem(item, quantity);
+            this.items[this.itemCount] = new OrderItem(item, quantity);
             this.itemCount++;
         }
     }
@@ -29,7 +29,7 @@ public class Order {
     public double getTotal() { // ini untuk total haraga
         double total = 0;
         for (int i = 0; i < itemCount; i++) {
-            total += orderItems[i].getSubtotal();
+            total += items[i].getSubtotal();
         }
         return total;
     }
